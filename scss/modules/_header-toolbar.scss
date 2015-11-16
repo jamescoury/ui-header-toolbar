@@ -1,0 +1,76 @@
+/* ---------------   Header Toolbar   ----- */
+
+body {
+    @include outer-container($max-width);
+}
+
+#logo img {
+    height: 2.7em;
+}
+
+#header-toolbar {
+    @include span-columns($columns);
+    width: 100%;
+    background: $black;
+    color: $white;
+    text-align: center;
+    padding: 7px 3px 3px 3px;
+    background: $background;
+    box-sizing: border-box;
+}
+
+#nav-area {
+    @include span-columns($columns);
+    text-transform: uppercase;
+    padding: 5px 31px;
+    background: $black;
+    background: url($header-toolbar-background);
+    background-size: 100%;
+    color: $white;
+    box-sizing: border-box;
+}
+
+nav {
+    display: table; 
+    height: 62px;
+}
+
+nav.left > li {
+    display: table-cell;
+    padding-right: 17px;
+}
+
+nav.right > li {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 21px;
+}
+
+nav > li {
+    display: inline;
+}
+
+nav.left li > img {
+    max-height: 62px;
+}
+
+nav.right li > img {
+    max-height: 50%;
+}
+
+main {
+    clear: both;
+}
+section {
+    @include span-columns($two-thirds of $columns);
+    background: $light-grey;
+    padding: 11px;
+}
+
+aside {
+    @include span-columns($one-third of $columns);
+    @include shift-in-context($two-thirds of $columns);
+    background: $light-grey;
+    padding: 11px;
+    float: none;
+}

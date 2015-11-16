@@ -1,0 +1,22 @@
+/* ---------------   Discount Tire Theme   ----- */
+
+//Typography
+$dt-font: avenir, sans-serif;
+
+// Colors
+$background: #ed1c24;
+
+// General
+html {
+    font-family: $dt-font;
+}
+
+#header-toolbar {
+  background: $background;
+}
+
+// Backgrounds
+#nav-area {
+    background: url('../../images/toolbar-background.jpg');
+    background-size: 100%;
+}
